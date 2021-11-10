@@ -1,0 +1,15 @@
+@import "../../global";
+
+.filter-panel {
+  width: 100%;
+  margin-bottom: 40px;
+  .ant-input {
+    width: 1100px;
+    margin-bottom: 20px;
+  }
+
+  .ant-select {
+    width: 340px;
+    margin-right: 20px;
+  }
+}

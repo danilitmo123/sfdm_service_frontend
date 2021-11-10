@@ -1,0 +1,131 @@
+@import "../../../global";
+
+.blogger-card {
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 470px;
+  height: 350px;
+  padding: 30px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+
+  .blogger-stars {
+    display: flex;
+    margin-bottom: 20px;
+
+    .star {
+      margin-right: 10px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .blogger-description-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .blogger-description {
+      display: flex;
+      align-items: center;
+
+      .blogger-img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 4px;
+      }
+
+      .blogger-info {
+        width: max-content;
+        margin-right: 10px;
+
+        .blogger-about {
+          color: $dark-blue;
+          font-size: 12px;
+        }
+
+        .name-wrapper {
+          display: flex;
+
+          .blogger-name {
+            color: $dark-blue;
+            font-weight: 600;
+            font-size: 16px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .followers-wrapper {
+      display: flex;
+      align-items: center;
+
+      .followers {
+        background: $main-green;
+        font-weight: 700;
+        border-radius: 4px;
+        color: #fff;
+        padding: 4px 8px 4px 8px;
+        margin-right: 10px;
+      }
+
+      .followers-title {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .case-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .case-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .circle {
+        width: 10px;
+        height: 10px;
+        background: $main-green;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+
+      .case-descr {
+        display: flex;
+        flex-direction: column;
+
+        .case-title {
+          color: $dark-blue;
+          font-weight: 600;
+          font-size: 14px;
+        }
+
+        .case-date {
+          color: $dark-blue;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .tag-wrapper {
+    display: flex;
+
+    .tag-item {
+      background: $dark-blue;
+      width: max-content;
+      height: 25px;
+      margin-right: 15px;
+      padding: 4px 8px 4px 8px;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+}

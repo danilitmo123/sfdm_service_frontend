@@ -1,0 +1,33 @@
+@import "../../global";
+
+.bloggers-page {
+  display: flex;
+
+  .bloggers-wrapper {
+    padding: 15px;
+
+    .bloggers-top-tile {
+      margin-bottom: 40px;
+      width: 600px;
+      .bloggers-title {
+        font-weight: 700;
+        font-size: 30px;
+        color: $dark-blue;
+        margin-bottom: 20px;
+      }
+
+      .bloggers-popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(27, 51, 96, .7);
+        padding: 20px;
+        border-radius: 10px;
+        &-text {
+          color: #fff;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

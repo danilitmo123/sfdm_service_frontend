@@ -1,0 +1,11 @@
+@import "../../../global";
+
+.sidebar-item {
+  list-style: none;
+  margin-bottom: 20px;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    color: $main-green;
+  }
+}
