@@ -1,23 +1,22 @@
 export interface IBlogger {
   id: number,
-  blogger: IBloggerDescription,
-  rate: number,
-  case: IBloggerCase[],
-  tag: IBloggerTag[]
-}
-
-export interface IBloggerDescription {
   name: string,
-  surname: string,
+  birthdate: string,
   about: string,
-  img: string
+  rate: string,
+  tags: ITag[],
+  completedJobs: ICompletedJobs[]
 }
 
-export interface IBloggerCase {
-  title: string,
-  date: string
+interface ITag {
+  id: number,
+  title: string
 }
 
-export interface IBloggerTag {
+interface ICompletedJobs {
+  id: number,
   title: string,
+  description: string,
+  price: string,
+  customer: string
 }

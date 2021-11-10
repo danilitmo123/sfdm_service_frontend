@@ -1,95 +1,15 @@
 import React, { FC } from 'react';
-import BloggerItem from './BloggerItem';
 
 import './BloggerList.scss';
+import { bloggersAPI } from '../../services/BloggerService';
 
 const BloggerList: FC = () => {
-  const mockBloggers = [
-    {
-      id: 1,
-      rate: 5,
-      blogger: {
-        name: 'Даня ',
-        surname: 'Милохин',
-        about: 'TikTok, Instagram',
-        img: '',
-      },
-      case: [
-        { title: 'Реклама выборов', date: '17.07.2021' },
-        { title: 'Реклама выборов', date: '17.07.2021' },
-        { title: 'Реклама выборов', date: '17.07.2021' },
-      ],
-      tag: [
-        { title: '1XBET' },
-        { title: 'SBER' },
-        { title: 'ITMO' },
-      ],
-    },
-    {
-      id: 2,
-      rate: 4,
-      blogger: {
-        name: 'Настя',
-        surname: 'Ивлеева',
-        about: 'YouTube, Instagram',
-        img: '',
-      },
-      case: [
-        { title: 'Реклама выборов', date: '17.07.2021' },
-        { title: 'Реклама выборов', date: '17.07.2021' },
-        { title: 'Реклама выборов', date: '17.07.2021' },
-      ],
-      tag: [
-        { title: '1XBET' },
-        { title: 'SBER' },
-        { title: 'ITMO' },
-      ],
-    },
-    {
-      id: 3,
-      rate: 4,
-      blogger: {
-        name: 'Настя',
-        surname: 'Ивлеева',
-        about: 'YouTube, Instagram',
-        img: '',
-      },
-      case: [
-        { title: 'Реклама выборов', date: '17.07.2021' },
-        { title: 'Реклама выборов', date: '17.07.2021' },
-        { title: 'Реклама выборов', date: '17.07.2021' },
-      ],
-      tag: [
-        { title: '1XBET' },
-        { title: 'SBER' },
-        { title: 'ITMO' },
-      ],
-    },
-    {
-      id: 4,
-      rate: 4,
-      blogger: {
-        name: 'Настя',
-        surname: 'Ивлеева',
-        about: 'YouTube, Instagram',
-        img: '',
-      },
-      case: [
-        { title: 'Реклама выборов', date: '17.07.2021' },
-        { title: 'Реклама выборов', date: '17.07.2021' },
-        { title: 'Реклама выборов', date: '17.07.2021' },
-      ],
-      tag: [
-        { title: '1XBET' },
-        { title: 'SBER' },
-        { title: 'ITMO' },
-      ],
-    },
-  ];
+  const { data: bloggers } = bloggersAPI.useFetchAllBloggersQuery('');
 
+  console.log(bloggers);
   return (
     <div className="blogger-list">
-      {mockBloggers.map((blogger) => <BloggerItem blogger={blogger} key={blogger.id} />)}
+      {/* {mockBloggers.map((blogger) => <BloggerItem blogger={blogger} key={blogger.id} />)} */}
     </div>
   );
 };
